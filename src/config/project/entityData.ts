@@ -112,7 +112,7 @@ function getProperties(): ValueOf<EntityData, 'properties'> {
         propertyName: DATA_PROPERTY_NAME_2,
         refId: crypto.randomUUID()
       },
-      threshold: { upper: 5, lower: 2 },
+      threshold: { upper: 100, lower: 5 },
       type: 'data',
       unit: 'mg/L'
     },
@@ -134,19 +134,20 @@ function getProperties(): ValueOf<EntityData, 'properties'> {
       type: 'data',
       unit: '°C'
     },
-    {
-      propertyQueryInfo: {
-        propertyName: ALARM_VALUE_PROPERTY_NAME,
-        refId: crypto.randomUUID()
-      },
-      type: 'alarm-state'
-    },
-    {
-      propertyQueryInfo: {
-        propertyName: ALARM_MESSAGE_PROPERTY_NAME,
-        refId: crypto.randomUUID()
-      },
-      type: 'alarm-message'
-    }
+  
+    // {
+    //   propertyQueryInfo: {
+    //     propertyName: ALARM_VALUE_PROPERTY_NAME,
+    //     refId: crypto.randomUUID()
+    //   },
+    //   type: 'alarm-state'
+    // },
+    // {
+    //   propertyQueryInfo: {
+    //     propertyName: ALARM_MESSAGE_PROPERTY_NAME,
+    //     refId: crypto.randomUUID()
+    //   },
+    //   type: 'alarm-message'
+    // }
   ];
 }

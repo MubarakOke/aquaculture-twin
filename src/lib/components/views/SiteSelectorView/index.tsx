@@ -19,7 +19,7 @@ export function SiteSelectorView({ className }: { className?: ClassName }) {
 
   return (
     <main className={createClassName(styles.root, className, {})}>
-      <CookieFactoryLogoWide className={styles.logo} />
+      {/* <CookieFactoryLogoWide className={styles.logo} /> */}
       <section className={styles.head}>{HEAD_LABEL}</section>
       <section className={styles.items}>{siteElements}</section>
     </main>

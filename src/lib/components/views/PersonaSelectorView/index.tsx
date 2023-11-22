@@ -13,7 +13,7 @@ import type { User } from '@/lib/types';
 
 import styles from './styles.module.css';
 
-const HEAD_LABEL = `Choose a role`;
+const HEAD_LABEL = ``;
 let disabled = false;
 
 export function PersonaSelectorView({ className }: { className?: ClassName }) {
@@ -44,7 +44,8 @@ export function PersonaSelectorView({ className }: { className?: ClassName }) {
 
   return (
     <main className={createClassName(styles.root, className)} data-is-active={isActive}>
-      <CookieFactoryLogoWide className={styles.logo} />
+      {/* <CookieFactoryLogoWide className={styles.logo} /> */}
+      <h2 style={{ color: "white", margin: "0 auto", fontSize: "30px", textAlign: "center" }}>3D Aquaculture DigitalTwin System</h2>
       <div className={styles.head}>{HEAD_LABEL}</div>
       <div className={styles.items}>{personaElements}</div>
     </main>

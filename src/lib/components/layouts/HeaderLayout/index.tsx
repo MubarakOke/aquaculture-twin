@@ -10,7 +10,7 @@ export function HeaderLayout({ className }: { className?: ClassName }) {
   return (
     <main className={createClassName(styles.root, className)}>
       <section className={styles.head}>
-        <Logo />
+        {/* <Logo /> */}
         <SiteSelector />
         <SiteActivity />
         <UserMenu />

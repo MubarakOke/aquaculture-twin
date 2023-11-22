@@ -240,7 +240,9 @@ function Control({ panel: { icon, id, label } }: { panel: Panel }) {
 function EmptyState() {
   return (
     <main className={styles.emptyState}>
-      <CookieFactoryLogoWide className={styles.emptyStateLogo} />
+      {/* <CookieFactoryLogoWide className={styles.emptyStateLogo} /> */}
+      <h2 style={{ color: "white", margin: "0 auto", fontSize: "40px", textAlign: "center" }}>3D DigitalTwin</h2>
+
     </main>
   );
 }

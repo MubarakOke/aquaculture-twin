@@ -20,8 +20,8 @@ const sites: Record<string, SiteConfig[]> = {
         workspaceId: 'aquaculture-twinmaker'
       },
       id: crypto.randomUUID(),
-      location: '1 Main Street, Bakersville, NC, USA',
-      name: 'Bakersville Central'
+      location: 'Futminna',
+      name: 'Gidan Kwano'
     }
   ]
 };

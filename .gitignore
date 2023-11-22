@@ -16,7 +16,6 @@ dist
 dist-ssr
 *.local
 .next
-awsCredentials.json
 
 # Editor directories and files
 .vscode/*

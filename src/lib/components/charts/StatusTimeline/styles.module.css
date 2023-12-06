@@ -27,6 +27,7 @@ iot-app-kit-vis-status-timeline [class=x-axis-separator] {
 
 iot-app-kit-vis-status-timeline iot-app-kit-vis-threshold-legend {
   gap: 20rem;
+  overflow: hidden;
 }
 
 iot-app-kit-vis-status-timeline iot-app-kit-vis-threshold-legend iot-app-kit-vis-threshold-legend-row {

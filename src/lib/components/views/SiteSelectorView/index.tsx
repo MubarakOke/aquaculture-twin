@@ -31,7 +31,7 @@ function SiteElement({ handlePointerUp, site }: { handlePointerUp: (site: Site) 
     <button className={styles.item} onPointerUp={() => handlePointerUp(site)}>
       <FactoryIcon className={styles.itemIcon} />
       <section className={styles.itemGroup}>
-        <section className={styles.itemName}>{site.name}</section>
+        <section className={styles.itemName} style={{width: '1000px'}}>{site.name}</section>
       </section>
     </button>
   );

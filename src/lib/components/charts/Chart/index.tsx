@@ -28,7 +28,7 @@ export function Chart({ axis, ChartComponent, className, historyQueries, styles,
   }, [dataSource, historyQueries]);
 
   return (
-    <section className={createClassName(css.root, className)}>
+    <section className={createClassName(css.root, className)} style={{height: '150px'}}>
       <ChartComponent axis={axis} queries={timeSeriesQueries} thresholds={thresholds} styles={styles} />
     </section>
   );

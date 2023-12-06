@@ -7,9 +7,9 @@ export const QUERY_ALL_EQUIPMENT_AND_PROCESS_STEPS = `
   SELECT processStep, r1, e, r2, equipment
   FROM EntityGraph
   MATCH (cookieLine)<-[:isChildOf]-(processStepParent)<-[:isChildOf]-(processStep)-[r1]-(e)-[r2]-(equipment), equipment.components AS c
-  WHERE cookieLine.entityName = 'COOKIE_LINE'
-  AND processStepParent.entityName = 'PROCESS_STEP'
-  AND c.componentTypeId = 'com.example.cookiefactory.equipment'`;
+  WHERE cookieLine.entityName = 'device 1'
+  AND processStepParent.entityName = 'process_step'
+  AND c.componentTypeId = 'com.example.aquaculture-twinmaker.equipment'`;
 
 export function createQueryByEquipment(entityId: string, hops = DEFAULT_QUERY_HOPS) {
   const normalizedHops = Math.max(0, hops);
@@ -25,10 +25,11 @@ export function createQueryByEquipment(entityId: string, hops = DEFAULT_QUERY_HO
     SELECT processStep${selectString}
     FROM EntityGraph
     MATCH (cookieLine)<-[:isChildOf]-(processStepParent)<-[:isChildOf]-(processStep)${matchString}
-    WHERE cookieLine.entityName = 'COOKIE_LINE'
-    AND processStepParent.entityName = 'PROCESS_STEP'
+    WHERE cookieLine.entityName = 'device 1'
+    AND processStepParent.entityName = 'process_step'
     AND r${normalizedHops}.relationshipName != 'isChildOf'
-    AND e0.entityId = '${entityId}'`;
+    AND e0.entityId = '${entityId}'
+    AND c.componentTypeId = 'com.example.aquaculture-twinmaker.equipment'`;
 }
 
 export function createQueryByProcessStep(entityId: string, hops = DEFAULT_QUERY_HOPS) {
@@ -45,7 +46,8 @@ export function createQueryByProcessStep(entityId: string, hops = DEFAULT_QUERY_
     SELECT processStep${selectString}
     FROM EntityGraph
     MATCH (cookieLine)<-[:isChildOf]-(processStepParent)<-[:isChildOf]-(processStep)${matchString}
-    WHERE cookieLine.entityName = 'COOKIE_LINE'
-    AND processStepParent.entityName = 'PROCESS_STEP'
-    AND processStep.entityId = '${entityId}'`;
+    WHERE cookieLine.entityName = 'device 1'
+    AND processStepParent.entityName = 'process_step'
+    AND processStep.entityId = '${entityId}'
+    AND c.componentTypeId = 'com.example.aquaculture-twinmaker.equipment'`;
 }

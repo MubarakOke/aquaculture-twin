@@ -39,6 +39,8 @@ export const CHART_ALARM_THRESHOLDS: AppKitThreshold<AlarmState>[] = [
 ];
 
 export const CHART_COLORS: Record<ChartColors, { color: string; index: number }> = {
+  Green: { color: 'green', index: 4 },
+  Orange: { color: 'orange', index: 3 },
   Purple: { color: '#ed76ef', index: 2 },
   Teal: { color: '#71c9b9', index: 1 }
 };

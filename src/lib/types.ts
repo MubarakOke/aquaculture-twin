@@ -86,7 +86,7 @@ export type LatestValue<T extends AlarmState | Primitive> = {
 
 export type AlarmState = 'High' | 'Medium' | 'Low' | 'Normal' | 'Unknown';
 
-export type ChartColors = 'Purple' | 'Teal';
+export type ChartColors = 'Purple' | 'Teal' | 'Green' | 'Orange';
 
 export type Panel = {
   content?: ReactNode;

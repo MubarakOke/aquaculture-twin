@@ -123,14 +123,14 @@ export function DashboardPanel({ className }: { className?: ClassName; entityId?
         className={createClassName(css.root, className, { [css.multi]: selectedEntity.entityData !== null })}
         key={crypto.randomUUID()}
       >
-        {/* <div className={css.name}>{selectedEntity.entityData ? ALARM_STATUS_TEXT : ALL_COMPONENTS_TEXT}</div> */}
+        <div className={css.name}>{selectedEntity.entityData ? ALARM_STATUS_TEXT : ALL_COMPONENTS_TEXT}</div>
         <TimeSync initialViewport={VIEWPORT}>
-          {/* {statusTimelineElement} */}
+          {statusTimelineElement}
           {lineChartElements && (
-            <>
+            <div className='lineChartsElement'>
               <div className={css.name}>{PROPERTY_DETAIL_TEXT}</div>
               {lineChartElements}
-            </>
+            </div>
           )}
         </TimeSync>
       </main>

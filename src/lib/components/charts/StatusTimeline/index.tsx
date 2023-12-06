@@ -9,5 +9,6 @@ import { Chart, type ChartProps } from '@/lib/components/charts';
 import styles from './styles.module.css';
 
 export function StatusTimeline(props: Except<ChartProps, 'ChartComponent'>) {
+  console.log("entities", props.historyQueries)
   return <Chart {...props} ChartComponent={AppKitChart} className={styles.root} />;
 }

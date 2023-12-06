@@ -16,7 +16,7 @@ const sites: Record<string, SiteConfig[]> = {
         viewId: 'panel'
       },
       iottwinmaker: {
-        sceneId: 'aquaculture-twinmaker',
+        sceneId: 'turbidity_scene',
         workspaceId: 'aquaculture-twinmaker'
       },
       id: crypto.randomUUID(),

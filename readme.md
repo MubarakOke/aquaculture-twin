@@ -15,7 +15,7 @@ Original Source:
     [Link to the official AWS CookieFactory repository](https://github.com/aws-samples/aws-iot-twinmaker-samples)
 
 Gratitude:
-
+    
     We extend our gratitude to the developers of AWS CookieFactory for their contributions to open-source software.
 
 Compliance:

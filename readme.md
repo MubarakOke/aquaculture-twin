@@ -12,7 +12,7 @@ License:
 
 Original Source:
 
-    [Link to the official AWS CookieFactory repository](www.github.com/aws-samples/aws-iot-twinmaker-samples)
+    [Link to the official AWS CookieFactory repository](https://github.com/aws-samples/aws-iot-twinmaker-samples)
 
 Gratitude:
 
@@ -22,4 +22,4 @@ Compliance:
 
 Please refer to the full Apache License 2.0 for detailed terms and conditions:
 
-    [Link to the Apache License 2.0 text](www.apache.org/licenses/LICENSE-2.0.txt)
+    [Link to the Apache License 2.0 text](https://www.apache.org/licenses/LICENSE-2.0.txt)
